@@ -1,0 +1,257 @@
+header, .massage, .about-me, .about-me .info, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Segoe UI;
+}
+
+body {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #404040;
+}
+
+header {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 15% 0 15%;
+  padding-top: 3%;
+}
+
+header .header-text {
+  color: #404040;
+}
+
+.massage {
+  margin-top: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.massage h1 {
+  font-size: 7em;
+  color: #404040;
+  margin: -150px 0 -100px 0;
+}
+
+.massage h2 {
+  text-align: center;
+  margin: 100px 0 50px 0;
+  font-weight: 100;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  -webkit-box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.3);
+}
+
+menu {
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #404040;
+}
+
+menu .portfolio {
+  padding-left: 10%;
+}
+
+menu .portfolio h1 {
+  font-weight: 400;
+}
+
+menu .works {
+  margin: 5%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 50px;
+}
+
+menu .works div {
+  width: 350px;
+  height: 200px;
+}
+
+menu .works div img {
+  width: 100%;
+  height: 100%;
+}
+
+menu .works div h2 a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #404040;
+}
+
+.about-me {
+  background-color: #D45E5E;
+  width: 100%;
+  height: 10%;
+  margin-top: 300px;
+  color: #ffffff;
+}
+
+.about-me .photo {
+  background: #ffffff;
+  border: none;
+}
+
+.about-me .photo img {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+
+.about-me .photo img[alt="My photo"] {
+  color: #404040;
+}
+
+.about-me .info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 5%;
+}
+
+.about-me .info p {
+  padding: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 5%;
+  color: #404040;
+}
+
+footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .links div p {
+  padding: 5px;
+}
+
+footer .links div p a {
+  color: #404040;
+  text-decoration: none;
+}
+
+footer .copyright {
+  margin: 0 10% 0 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  * {
+    font-size: 1em;
+  }
+  header {
+    padding-top: 5%;
+  }
+  .massage h1 {
+    font-size: 5em;
+  }
+  .massage h2 {
+    padding: 0 15% 0 15%;
+  }
+  menu .works {
+    padding: 0 15% 0 15%;
+  }
+  menu .works div {
+    width: 300px;
+    height: 150px;
+  }
+  .about-me {
+    font-size: .7em;
+  }
+  .about-me .photo img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+  footer {
+    font-size: .5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .copyright {
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .massage h1 {
+    font-size: 3em;
+  }
+  menu .works div {
+    width: 225px;
+    height: 140px;
+  }
+  .about-me {
+    font-size: .6em;
+  }
+  .about-me .photo img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .massage h1 {
+    font-size: 2em;
+  }
+  menu .works div {
+    width: 100px;
+    height: 75px;
+  }
+  .about-me {
+    font-size: .5em;
+  }
+  .about-me .photo img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
